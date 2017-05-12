@@ -1,0 +1,20 @@
+.tablepaid{
+	width:100%;
+}
+.btnpaid{
+	padding: 10px 20px;
+	background-color: #E82F2F;
+	border:none;
+	border-radius: 6px;
+	-webkit-transition-duration: 0.4s;
+	margin: 10px auto;
+}
+.btnpaid:hover{
+	background-color: #C81F1F
+}
+.tablepaid th{
+	text-align:center; 
+}
+.tablepaid td{
+	text-align:left;
+}
