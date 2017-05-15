@@ -1,3 +1,26 @@
-.tablenew{
+.purchases{
 	width:100%;
+	border: 1px solid black;
+	padding: 15px 0;
+}
+.info{
+		p{
+			text-align:left;
+			font-size: 13px;
+		}
+	width:45%;
+	display:inline-block;
+}
+.product{
+	@extend .purchases;
+	table{
+		width:100%;
+	}
+	margin-top: 10px;
+}
+.name{
+	width:40%
+}
+.num, .among, .image, .commerce, .button{
+	width:10%
 }
