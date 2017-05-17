@@ -1,8 +1,9 @@
 import React from 'react'
 import './PaidReservationView.scss'
+import FontIcon from 'react-toolbox/lib/font_icon'
 
 export const PaidReservationView = () => (
-	<div>
+	<div className="box">
 		<table className="tablepaid">
 			<tr>
 				<th style={{ width: '30%' }}>

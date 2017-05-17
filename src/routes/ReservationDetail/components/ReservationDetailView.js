@@ -1,24 +1,25 @@
 import React from 'react'
 import './ReservationDetailView.scss'
+import FontIcon from 'react-toolbox/lib/font_icon'
 
 export const ReservationDetailView = () => (
 	<div>
 		<h4>User information</h4>
-		<div className="purchases">
+		<div className="purchases box">
 			<div className="info">
-				<p>First Name:</p>
-				<p>Last Name:</p>
-				<p>Email:</p>
+				<p><FontIcon className="icon" value={'face'} /> First Name:</p>
+				<p><FontIcon className="icon" value={'perm_identity'} /> Last Name:</p>
+				<p><FontIcon className="icon" value={'email'} /> Email:</p>
+				<p><FontIcon className="icon" value={'home'} /> Adress Line:</p>
 			</div>
 			<div className="info">
-				<p>Adress Line:</p>
-				<p>City:</p>
-				<p>Locality:</p>
-				<p>Local Area 1:</p>
+				<p><FontIcon className="icon" value={'location_city'} /> City:</p>
+				<p><FontIcon className="icon" value={'location_on'} /> Locality:</p>
+				<p><FontIcon className="icon" value={'public'} /> Local Area 1:</p>
 			</div>
 		</div>
 		<h4>Products</h4>
-		<div className="product">
+		<div className="product box">
 			<table>
 					<td className="image">
 						<img

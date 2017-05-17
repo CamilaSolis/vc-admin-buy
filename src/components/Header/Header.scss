@@ -1,18 +1,75 @@
-.route--active {
-  color: white;
-}
+.menu li .route--active {
+		text-decoration:none;
+		p{
+			color:#e6e6e6;
+		}
+		path{
+			fill:#e6e6e6 !important;
+		}
+	}
 .menu{
 	list-style-type: none;
 	margin:0;
 	padding:0;
 	overflow: hidden;
-	background-color: #594f4f;
+	background-color: #2d333a;
 	top:0;
 	width: 100%;
 }
 
 .menu li{
 	float:left;
-	padding: 14px 50px;
+	padding: 10px 40px 0 40px;
 	text-decoration:none;
+	text-align: center;
+	position:relative;
+	p{
+		color:#a2a2a2;
+		text-decoration:none;
+		transition: all ease .2s;
+		margin:inherit;
+		font-size:13px;
+		margin:none;
+	}
+	path{
+		transition: all ease .2s;
+	}
+}
+.menu li .route--active:after, .menu li .route--active:before{
+	bottom:0%;
+	margin-bottom: -2px;
+	left:50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+}
+.menu li .route--active:before{
+	border-bottom-color: #e6e6e6;
+	border-width:9px;
+	margin-left: -9px;
+	z-index:1;
+}
+.menu li .route--active{
+	border-bottom-color: #e6e6e6;
+	border-width:6px;
+	margin-left: -6px;
+	z-index:1;
+}
+.icons{
+	display: inline-block;
+}
+.menu li:hover{
+	a{
+		text-decoration:none;
+		p{
+			color:#e6e6e6;
+			transition: all ease .2s;
+		}
+		path{
+			fill:#e6e6e6 !important;
+			transition: all ease .2s;
+		}
+	}
 }

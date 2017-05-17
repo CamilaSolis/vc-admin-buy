@@ -1,27 +1,29 @@
 import React from 'react'
 import { IndexLink, Link } from 'react-router'
 import './Header.scss'
+import nave from './icon-new'
+import ufo from './icon-paid'
+import satelite from './icon-detail'
+import FontIcon from 'react-toolbox/lib/font_icon'
 
 export const Header = () => (
   <div className="menu">
     <li>
-      <IndexLink to='/' activeClassName='route--active'>
-        Home
-      </IndexLink>
-    </li>
-    <li>
       <Link to='/newreservation' activeClassName='route--active'>
-        New Reservation
+        {nave('#a2a2a2')}
+        <p>New Reservation</p>
       </Link>
     </li>
     <li>
       <Link to='/paidreservation' activeClassName='route--active'>
-        Paid Reservation
+        {ufo('#a2a2a2')}
+        <p>Paid Reservation</p>
       </Link>
     </li>
     <li>
       <Link to='/reservationdetail' activeClassName='route--active'>
-        Reservation Detail
+        {satelite('#a2a2a2')}
+        <p>Reservation Detail</p>
       </Link>
     </li>
   </div>
